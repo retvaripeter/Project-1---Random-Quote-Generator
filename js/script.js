@@ -36,6 +36,10 @@ var quotes = [
   {
     quote: "Work like you don't need the money. Love like you've never been hurt. Dance like nobody's watching.",
     source: "Satchel Paige"
-  }
+  },
+  {
+    quote: "Everything will be okay in the end. If it's not okay, then it's not the end.",
+    source: "Ed Sheeran"
+  },
 
 ];
