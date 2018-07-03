@@ -43,3 +43,37 @@ var quotes = [
   },
 
 ];
+
+//Function
+
+function getRandomQuote () {
+
+
+}
+
+// I. Selects a random quote OBJECT from the quotes array.
+
+/* 1)
+
+    For this we need to use the Math.random function to generate a number
+    berween 1 and the length of the array(quotes).
+
+    The fuction: Math.floor(Math.random()* quotes.length) + 1
+
+   2)
+
+    Second we need to figure it out how to access and display an object.
+    Maybe we can use console.log or simple console to test it.
+    What will displat quotes[0]?
+    To display all the properties or/and values we can use only the "for (var key in quotes)" loop.
+    Or another option is to display it one by one, like concatinate the quote string with the value: quotes[i].quote
+
+   3)
+
+    The randomly select should come from the Math.random function, which will generate a random number and we will put this number in the 'i' variable.
+    We will put this randomly selected quotes[i] to a variable,
+
+
+// II. Returns the randomly selected quote object.
+
+    We can simple call the function, because it will contain the word return at the end.
