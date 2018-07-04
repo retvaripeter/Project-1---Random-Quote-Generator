@@ -29,31 +29,37 @@ var quotes = [
     //Citation: which contains a string: the text of the quote that will be displayed on the page.
     citation: "From the song called 'Drunk'",
     //Year: which contains a number identifying the year of the quote.
-    year: 2012
+    year: 2012,
+    tags: "Humor"
   },
   {
     quote: "I don’t count my sit-ups. When I feel pain, that’s when I start counting, because that’s when it really counts.",
     source: "Mohammed Ali",
     citation: "From a sport interview",
-    year: 1970
+    year: 1970,
+    tags: "Motivation"
   },
   {
     quote: "Learning never exhausts the mind.",
     source: "Leonardo Da Vinci",
-    year:1498
+    year:1498,
+    tags: "Study"
   },
   {
     quote: "Life without love is like a tree without blossom or fruit",
     source: "Khalil Gibran",
-    year: 1922
+    year: 1922,
+    tags: "Love and Life"
   },
   {
     quote: "Work like you don't need the money. Love like you've never been hurt. Dance like nobody's watching.",
-    source: "Satchel Paige"
+    source: "Satchel Paige",
+    tags: "Life"
   },
   {
     quote: "Everything will be okay in the end. If it's not okay, then it's not the end.",
-    source: "Ed Sheeran"
+    source: "Ed Sheeran",
+    tags: "Love and music"
   },
 
 ];
@@ -164,6 +170,8 @@ getRandomRGBcolors ();
   // add the ending paragraph html tag at the end of the html variable even there was no citation or year property in the random Array
 
       html += '</p>'
+
+      html += '<p class="tags">' + myRandomquote.tags + '<p>';
 
 
   // returns and displays the final HTML string to the page ( use this JS snippet to accomplish that )

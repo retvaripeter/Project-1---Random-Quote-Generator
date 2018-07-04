@@ -52,6 +52,21 @@ body {
   content: ", ";
   font-style: normal;
 }
+.tags {
+  font-style: italic;
+  font-size: 1.25rem;;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+  text-align: right;
+  margin-right: 4em;
+
+}
+
+.tags:before {
+  content: "~ ";
+  font-style: normal;
+}
+
 .year:before {
   content: ", ";
   font-style: normal;
@@ -86,6 +101,9 @@ body {
     font-size: 3rem;
   }
   .source {
+    font-size: 1rem;
+  }
+  .tags {
     font-size: 1rem;
   }
 }
