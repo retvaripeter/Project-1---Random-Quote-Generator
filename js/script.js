@@ -91,6 +91,10 @@ function printQuote () {
 
   var myRandomquote = getRandomQuote();
 
+  //testing what's inside the Variables
+
+  alert (myRandomquote);
+
 // concatinate the proper propeties :) to the html variable which we generated in the function's scope
 
       html = '<p class="quote"> '+ myRandomquote.quote + '</p>';
