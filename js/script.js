@@ -81,9 +81,9 @@ function printQuote () {
 
 // concatinate the proper propeties :) to the html variable which we generated in the function's scope
 
-  var html = '<p class="quote"> '+ [myRandomquote.quote] + '</p>';
+  var html = '<p class="quote"> '+ myRandomquote.quote + '</p>';
 
-      html += '<p class="source"> ' + [myRandomquote.source];
+      html += '<p class="source"> ' + myRandomquote.source;
 
 
   // add the citation  if it's value not undefined
