@@ -24,3 +24,7 @@ Notes for myself to build a structure:
 // II. Returns the randomly selected quote object.
 
     We can simple call the function in the array[getTheRandomNumber], because it will contain the word return at the end.
+
+III. Challenge: only add a property if the object has it
+
+Check with console.log or in console with this code: quotes[randomnumber].citation or year has an undefined  value or not. If not than add it to the html.

@@ -1,6 +1,8 @@
 // event listener to respond to "Show another quote" button clicks
 // when user clicks anywhere on the button, the "printQuote" function is called
-// I disabled this button until I finish with the rest of the project: document.getElementById('loadQuote').addEventListener("click", printQuote, false);
+// I disabled this button until I finish with the rest of the project: //
+
+document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
 //Array which holds the objects about the quotes
 
@@ -44,15 +46,18 @@ var quotes = [
 
 ];
 
-//Function
+// Functions
 
 /*
+Tasks to do(checklist):
 
 I. Selects a random quote OBJECT from the quotes array.
 II. Returns the randomly selected quote object.
 
-This function calls the GetRandomNumber function to get a random object from array 'quotes'
 */
+
+// This function calls the GetRandomNumber function to get a random object from array 'quotes'
+
 
 function getRandomQuote () {
 
@@ -70,5 +75,41 @@ var RandomNumber = Math.floor(Math.random()* quotes.length);
 
 function printQuote () {
 
+// call the getRandomQuote function and put it in the myRandomquote variable
+
   var myRandomquote = getRandomQuote();
+
+// concatinate the proper propeties :) to the html variable which we generated in the function's scope
+
+  var html = '<p class="quote"> '+ [myRandomquote.quote] + '</p>';
+
+      html + = '<p class="source"> ' + [myRandomquote.source];
+
+
+  // add the citation  if it's value not undefined
+
+  if (myRandomquote.citation !== "undefined"){
+
+      html + = '<span class="citation">' + myRandomquote.citation '</span>';
+
+  }
+
+  // add the year  if it's value not undefined
+
+  else if (myRandomquote.year !== "undefined"){
+
+      html + = '<span class="year">' + myRandomquote.year '</span>';
+
+  }
+
+  // add the ending paragraph html tag at the end of the html variable even there was no citation or year property in the random Array
+
+      html + = '</p>'
+
+
+  // returns and displays the final HTML string to the page ( use this JS snippet to accomplish that )
+
+  return html;
+  document.getElementById('quote-box').innerHTML
+
 }
