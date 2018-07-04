@@ -84,3 +84,4 @@ var RandomNumber = Math.floor(Math.random()* quotes.length) + 1;
 // II. Returns the randomly selected quote object.
 
     We can simple call the function, because it will contain the word return at the end.
+*/
