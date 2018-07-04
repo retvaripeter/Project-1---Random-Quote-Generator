@@ -56,6 +56,15 @@ II. Returns the randomly selected quote object.
 
 */
 
+// This function replace the id quote-box in index.html page
+
+function print (message) {
+
+  var outputDiv = document.getElementById('quote-box') ;
+  outputDiv.innerHTML = message;
+
+}
+
 // This function calls the GetRandomNumber function to get a random object from array 'quotes'
 
 
@@ -113,6 +122,10 @@ function printQuote () {
   // returns and displays the final HTML string to the page ( use this JS snippet to accomplish that )
 
   return html;
-  document.getElementById('quote-box').innerHTML
+
+  //calls the print Function
+
+  print (html);
+
 
 }
