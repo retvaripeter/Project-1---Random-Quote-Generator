@@ -93,7 +93,7 @@ function printQuote () {
 
   //testing what's inside the Variables
 
-  alert (myRandomquote);
+  document.write(myRandomquote.join(", "));
 
 // concatinate the proper propeties :) to the html variable which we generated in the function's scope
 
