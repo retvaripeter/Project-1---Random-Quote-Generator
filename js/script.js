@@ -104,7 +104,7 @@ function printQuote () {
 
   // add the ending paragraph html tag at the end of the html variable even there was no citation or year property in the random Array
 
-      html + = '</p>'
+      html += '</p>'
 
 
   // returns and displays the final HTML string to the page ( use this JS snippet to accomplish that )
