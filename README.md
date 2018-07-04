@@ -40,3 +40,20 @@ function delayedAlert() {
 }
 
 instead of slowAlert will be the printQuote function
+
+
+V. Challenge: background color
+
+Background color changes each time the quote changes.
+
+The color goes from black (rgb(0,0,0)) to white(rgb(255,255,255))
+So if we use this rgb model we can change the color of a letter/background etc.
+
+To get it randomly we need the Math.random() function with this way and put it into 3 variables which
+will hold the values between 0 and 255. We also need another variable to concatinate these values to a string.
+
+var r = Math.floor(Math.Random()*256);
+var g = Math.floor(Math.Random()*256);
+var b = Math.floor(Math.Random()*256);
+
+var RGBcolor = "rgb(" + r +","+ g +","+ b + ")";

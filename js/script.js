@@ -86,6 +86,17 @@ function getRandomQuote () {
   return quotes[getRandomNumber()];
 
 }
+//Generates a random number between 0 and 255 and create the RGB html string:
+
+function getRandomRGBcolors() {
+
+  var r = Math.floor(Math.Random() * 256);
+  var g = Math.floor(Math.Random() * 256);
+  var b = Math.floor(Math.Random() * 256);
+
+  var RGBcolor = "rgb(" + r + "," + g + "," + b + ")";
+
+}
 
 // Generates a random number between 1 and the length of 'qoutes array'
 function getRandomNumber () {
