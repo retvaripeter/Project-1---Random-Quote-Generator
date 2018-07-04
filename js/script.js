@@ -104,7 +104,7 @@ function printQuote () {
 
   if (myRandomquote.citation !== undefined){
 
-      html += '<span class="citation">' + myRandomquote.citation '</span>';
+      html += '<span class="citation">' + myRandomquote.citation + '</span>';
 
   }
 
@@ -112,7 +112,7 @@ function printQuote () {
 
   else if (myRandomquote.year !== undefined){
 
-      += '<span class="year">' + myRandomquote.year '</span>';
+      += '<span class="year">' + myRandomquote.year + '</span>';
 
   }
 
