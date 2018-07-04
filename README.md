@@ -57,3 +57,12 @@ var g = Math.floor(Math.Random()*256);
 var b = Math.floor(Math.Random()*256);
 
 var RGBcolor = "rgb(" + r +","+ g +","+ b + ")";
+
+6. Add tags property to array and print it as well
+
+need to add tag properties and order values as well
+
+change the javascript html variable with adding 1 more paragraph with the tags
+
+change the CSS style too to show in a nice and proper way the tags
+should be also on the right side like the year maybe with a slight different before the word
