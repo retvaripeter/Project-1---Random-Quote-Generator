@@ -90,11 +90,13 @@ function getRandomQuote () {
 
 function getRandomRGBcolors() {
 
-  var r = Math.floor(Math.Random() * 256);
-  var g = Math.floor(Math.Random() * 256);
-  var b = Math.floor(Math.Random() * 256);
+  var r = Math.floor(Math.random() * 256);
+  var g = Math.floor(Math.random() * 256);
+  var b = Math.floor(Math.random() * 256);
 
   var RGBcolor = "rgb(" + r + "," + g + "," + b + ")";
+
+  document.body.style.background = RGBcolor;
 
 }
 
@@ -109,6 +111,10 @@ var RandomNumber = Math.floor(Math.random()* quotes.length);
 //This function will print the random quote to the screen
 
 function printQuote () {
+
+// call the getRandomRGBcolors function to change the background color at the beginning
+
+getRandomRGBcolors ();
 
 // call the getRandomQuote function and put it in the myRandomquote variable
 
