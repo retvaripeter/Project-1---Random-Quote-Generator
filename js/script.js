@@ -67,3 +67,8 @@ function getRandomNumber () {
 var RandomNumber = Math.floor(Math.random()* quotes.length);
   return RandomNumber ;
 }
+
+function printQuote () {
+
+  var myRandomquote = getRandomQuote();
+}
