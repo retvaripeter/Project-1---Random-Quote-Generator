@@ -48,9 +48,7 @@ var quotes = [
 
 function getRandomQuote () {
 
-  i = getRandomNumber () ;
-  var getTherandomObject = quotes[i];
-  return getTherandomObject;
+  return quotes[getRandomNumber()];
 
 }
 
