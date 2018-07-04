@@ -36,7 +36,6 @@ var quotes = [
   {
     quote: "Life without love is like a tree without blossom or fruit",
     source: "Khalil Gibran",
-    citation: "From the song called 'Drunk'",
     year: 1922
   },
   {
