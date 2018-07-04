@@ -85,6 +85,7 @@ function printQuote () {
 
       html += '<p class="source"> ' + myRandomquote.source;
 
+/* Test it without the if statements
 
   // add the citation  if it's value not undefined
 
@@ -101,6 +102,8 @@ function printQuote () {
       html += '<span class="year"> myRandomquote.year </span>';
 
   }
+
+*/
 
   // add the ending paragraph html tag at the end of the html variable even there was no citation or year property in the random Array
 
