@@ -125,8 +125,6 @@ function printQuote () {
 
   // returns and displays the final HTML string to the page ( use this JS snippet to accomplish that )
 
-  return html;
+document.getElementById('quote-box').innerHTML = html ;
 
 }
-
-document.getElementById('quote-box').innerHTML = printQuote();
