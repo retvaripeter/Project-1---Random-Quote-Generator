@@ -112,7 +112,7 @@ function printQuote () {
 
   else if (myRandomquote.year !== undefined){
 
-      += '<span class="year">' + myRandomquote.year + '</span>';
+    html  += '<span class="year">' + myRandomquote.year + '</span>';
 
   }
 
