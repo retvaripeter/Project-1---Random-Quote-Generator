@@ -51,6 +51,13 @@ function getRandomQuote () {
 
 }
 
+// Generates a random number between 1 and the length of 'qoutes array'
+function getRandomNumber () {
+
+var RandomNumber = Math.floor(Math.random()* quotes.length) + 1;
+  return RandomNumber ;
+}
+
 // I. Selects a random quote OBJECT from the quotes array.
 
 /* 1)
