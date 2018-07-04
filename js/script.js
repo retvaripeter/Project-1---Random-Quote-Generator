@@ -5,15 +5,17 @@ document.getElementById('loadQuote').addEventListener("click", printQuote, false
 
 //Variables
 
+//I variable for counter
+
+var i = 0 ;
+
 // this html variable will hold all the string for the printQuote function
 var html ;
 
 /*
-The returned timeoutID is a positive integer value which identifies the timer
-created by the call to setTimeout();
-this value can be passed to clearTimeout() to cancel the timeout.
+interValid uniquely identifies the interval
 */
-var timeoutID;
+var intervalID;
 
 //Array which holds the objects about the quotes
 
@@ -69,13 +71,8 @@ II. Returns the randomly selected quote object.
 
 function delayedPrint () {
 
-//repeats the delay 100 times
+  var intervalID = window.setInterval(printQuote, 2000);
 
-  for (var i = 1; i < 100; i += 1) {
-
-  timeoutID = window.setTimeout(printQuote,7000);
-
-  }
 }
 
 //Call the delayedPrint function to change the qutes after 7 seconds
