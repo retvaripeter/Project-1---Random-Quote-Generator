@@ -65,15 +65,20 @@ I. Selects a random quote OBJECT from the quotes array.
 II. Returns the randomly selected quote object.
 
 */
-//This function will help to change the quotes after 5 seconds
+//This function will help to change the quotes after 7 seconds
 
 function delayedPrint () {
 
-timeoutID = window.setTimeout(printQuote,5000);
+//repeats the delay 100 times
 
+  for (var i = 1; i < 100; i += 1) {
+
+  timeoutID = window.setTimeout(printQuote,7000);
+
+  }
 }
 
-//Call the delayedPrint function to change the qutes after 5 seconds
+//Call the delayedPrint function to change the qutes after 7 seconds
 
 delayedPrint();
 
