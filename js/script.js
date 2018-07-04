@@ -123,9 +123,6 @@ function printQuote () {
 
   return html;
 
-
-
-  document.getElementById('quote-box').innerHTML = html;
-
-
 }
+
+document.getElementById('quote-box').innerHTML = html;
