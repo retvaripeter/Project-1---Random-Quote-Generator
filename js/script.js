@@ -2,7 +2,7 @@
 // when user clicks anywhere on the button, the "printQuote" function is called
 // I disabled this button until I finish with the rest of the project: document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
-//Array which holds the objects about the Quotes
+//Array which holds the objects about the quotes
 
 var quotes = [
 
@@ -46,6 +46,14 @@ var quotes = [
 
 //Function
 
+/*
+
+I. Selects a random quote OBJECT from the quotes array.
+II. Returns the randomly selected quote object.
+
+This function calls the GetRandomNumber function to get a random object from array 'quotes'
+*/
+
 function getRandomQuote () {
 
   return quotes[getRandomNumber()];
@@ -59,27 +67,3 @@ function getRandomNumber () {
 var RandomNumber = Math.floor(Math.random()* quotes.length);
   return RandomNumber ;
 }
-
-// I. Selects a random quote OBJECT from the quotes array.
-
-/* 1)
-
-    For this we need to use the Math.random function to generate a number
-    berween 0 (because the first obeject in array holds the index value: 0) and the length of the array(quotes)-1.
-
-    The fuction: Math.floor(Math.random()* quotes.length) + 1
-
-   2)
-
-    Second we need to figure it out how to access and display an object.
-    If we would like to display let say the first object with Ed Sheeran's famous tought: quotes[0] it's ok.
-
-   3)
-
-    The randomly select method should come from the Math.random function, which will generate a random number and we will put this number in the 'i' variable.
-
-
-// II. Returns the randomly selected quote object.
-
-    We can simple call the function, because it will contain the word return at the end.
-*/
