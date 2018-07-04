@@ -54,7 +54,7 @@ function getRandomQuote () {
 // Generates a random number between 1 and the length of 'qoutes array'
 function getRandomNumber () {
 
-var RandomNumber = Math.floor(Math.random()* quotes.length) + 1;
+var RandomNumber = Math.floor(Math.random()* quotes.length);
   return RandomNumber ;
 }
 
@@ -63,22 +63,18 @@ var RandomNumber = Math.floor(Math.random()* quotes.length) + 1;
 /* 1)
 
     For this we need to use the Math.random function to generate a number
-    berween 1 and the length of the array(quotes).
+    berween 0 (because the first obeject in array holds the index value: 0) and the length of the array(quotes)-1.
 
     The fuction: Math.floor(Math.random()* quotes.length) + 1
 
    2)
 
     Second we need to figure it out how to access and display an object.
-    Maybe we can use console.log or simple console to test it.
-    What will displat quotes[0]?
-    To display all the properties or/and values we can use only the "for (var key in quotes)" loop.
-    Or another option is to display it one by one, like concatinate the quote string with the value: quotes[i].quote
+    If we would like to display let say the first object with Ed Sheeran's famous tought: quotes[0] it's ok.
 
    3)
 
-    The randomly select should come from the Math.random function, which will generate a random number and we will put this number in the 'i' variable.
-    We will put this randomly selected quotes[i] to a variable,
+    The randomly select method should come from the Math.random function, which will generate a random number and we will put this number in the 'i' variable.
 
 
 // II. Returns the randomly selected quote object.
