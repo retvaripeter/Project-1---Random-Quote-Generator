@@ -93,16 +93,26 @@ function printQuote () {
 
   // add flow to the program with if stastements
 
+  // if the random object has a citation or year property or both
+
   if (myRandomquote.citation !== undefined || myRandomquote.year !== undefined){
 
+  // if the random object has a citation and year property
+
       if (myRandomquote.citation !== undefined && myRandomquote.year !== undefined ){
+
+  // add the value of the property and the template as a string to the variable html
 
         html += '<span class="citation">' + myRandomquote.citation + '</span>';
         html += '<span class="year">' + myRandomquote.year + '</span>';
 
+  // if the random object has a citation property
+
       } else if (myRandomquote.citation !== undefined ){
 
         html += '<span class="citation">' + myRandomquote.citation + '</span>';
+
+  // if the random object has a year property 
 
       } else if ((myRandomquote.year !== undefined )){
 
