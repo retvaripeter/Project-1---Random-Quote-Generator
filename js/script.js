@@ -2,15 +2,7 @@
 // when user clicks anywhere on the button, the "printQuote" function is called
 // I disabled this button until I finish with the rest of the project: //
 
-document.getElementById('loadQuote').addEventListener("click", test, false);
-
-//Testing the button
-
-function test () {
-
-  alert ("Hi user! If you're reading me, the test worked");
-
-}
+document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
 //Array which holds the objects about the quotes
 
