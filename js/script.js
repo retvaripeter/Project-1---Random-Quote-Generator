@@ -8,6 +8,13 @@ document.getElementById('loadQuote').addEventListener("click", printQuote, false
 // this html variable will hold all the string for the printQuote function
 var html ;
 
+/*
+The returned timeoutID is a positive integer value which identifies the timer
+created by the call to setTimeout();
+this value can be passed to clearTimeout() to cancel the timeout.
+*/
+var timeoutID;
+
 //Array which holds the objects about the quotes
 
 var quotes = [
@@ -58,9 +65,19 @@ I. Selects a random quote OBJECT from the quotes array.
 II. Returns the randomly selected quote object.
 
 */
+//This function will help to change the quotes after 5 seconds
+
+function delayedPrint () {
+
+timeoutID = window.setTimeout(printQuote,5000);
+
+}
+
+//Call the delayedPrint function to change the qutes after 5 seconds
+
+delayedPrint();
 
 // This function calls the GetRandomNumber function to get a random object from array 'quotes'
-
 
 function getRandomQuote () {
 
@@ -75,6 +92,8 @@ function getRandomNumber () {
 var RandomNumber = Math.floor(Math.random()* quotes.length);
   return RandomNumber ;
 }
+
+//This function will print the random quote to the screen
 
 function printQuote () {
 
@@ -112,7 +131,7 @@ function printQuote () {
 
         html += '<span class="citation">' + myRandomquote.citation + '</span>';
 
-  // if the random object has a year property 
+  // if the random object has a year property
 
       } else if ((myRandomquote.year !== undefined )){
 
