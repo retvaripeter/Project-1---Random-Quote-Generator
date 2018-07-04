@@ -6,7 +6,7 @@ document.getElementById('loadQuote').addEventListener("click", printQuote, false
 //Variables
 
 // this html variable will hold all the string for the printQuote function
-var html = ;
+var html ;
 
 //Array which holds the objects about the quotes
 
