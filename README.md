@@ -28,3 +28,15 @@ Notes for myself to build a structure:
 III. Challenge: only add a property if the object has it
 
 Check with console.log or in console with this code: quotes[randomnumber].citation or year has an undefined  value or not. If not than add it to the html.
+
+IV. Challenge: Set a timer to call the printQuote function
+
+I will use the notes/examples from MDN:
+
+var timeoutID;
+
+function delayedAlert() {
+  timeoutID = window.setTimeout(slowAlert, 2000);
+}
+
+instead of slowAlert will be the printQuote function
