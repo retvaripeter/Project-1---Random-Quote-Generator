@@ -23,7 +23,7 @@ var quotes = [
     year: 2012
   },
   {
-    quote: "I don’t count my sit-ups. I only start counting when it starts hurting. When I feel pain, that’s when I start counting, because that’s when it really counts.",
+    quote: "I don’t count my sit-ups. When I feel pain, that’s when I start counting, because that’s when it really counts.",
     source: "Mohammed Ali",
     citation: "From a sport interview",
     year: 1970
