@@ -71,7 +71,7 @@ II. Returns the randomly selected quote object.
 
 function delayedPrint () {
 
-  var intervalID = window.setInterval(printQuote, 2000);
+  var intervalID = window.setInterval(printQuote, 10000);
 
 }
 
