@@ -97,7 +97,8 @@ function getRandomRGBcolors() {
   var RGBcolor = "rgb(" + r + "," + g + "," + b + ")";
 
   document.body.style.background = RGBcolor;
-
+// I've changed the "Show another quote" button to transparent because when the background color has changed it remain green
+// and looked terrible.Now it changes with the background.
 }
 
 // Generates a random number between 1 and the length of 'qoutes array'
