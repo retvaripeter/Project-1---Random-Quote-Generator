@@ -48,12 +48,16 @@ var quotes = [
 
 function getRandomQuote () {
 
+  i = getRandomNumber () ;
+  var getTherandomObject = quotes[i];
+  return getTherandomObject;
 
 }
 
 // Generates a random number between 1 and the length of 'qoutes array'
 function getRandomNumber () {
 
+// this function is perfect, because it will less than 1 relative to the quotes.length (thanks to the Math.random which never gonna be 1)
 var RandomNumber = Math.floor(Math.random()* quotes.length);
   return RandomNumber ;
 }
