@@ -100,23 +100,26 @@ function printQuote () {
 
 
 
-  // add the citation  if it's value not undefined
+  // add flow to the program with if stastements
 
-  if (myRandomquote.citation !== undefined){
+  if (myRandomquote.citation !== undefined || myRandomquote.year !== undefined){
 
-      html += '<span class="citation">' + myRandomquote.citation + '</span>';
+      if (myRandomquote.citation !== undefined && myRandomquote.year !== undefined ){
+
+        html += '<span class="citation">' + myRandomquote.citation + '</span>';
+        html += '<span class="year">' + myRandomquote.year + '</span>';
+
+      } else if (myRandomquote.citation !== undefined ){
+
+        html += '<span class="citation">' + myRandomquote.citation + '</span>';
+
+      } else if ((myRandomquote.year !== undefined )){
+
+        html += '<span class="year">' + myRandomquote.year + '</span>';
+
+      }
 
   }
-
-  // add the year  if it's value not undefined
-
-  else if (myRandomquote.year !== undefined){
-
-    html  += '<span class="year">' + myRandomquote.year + '</span>';
-
-  }
-
-
 
   // add the ending paragraph html tag at the end of the html variable even there was no citation or year property in the random Array
 
